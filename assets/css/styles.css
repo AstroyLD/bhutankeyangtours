@@ -58,6 +58,10 @@
   --img-scale: scale(1.1);
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 4rem;
@@ -409,6 +413,79 @@ input {
   background: none;
 }
 
+/* ================ MODAL================= */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: white;
+  width: 1300px;
+  height: 80vh;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 50px 50px;
+}
+
+.modal--button--link {
+  background: var(--first-color);
+  padding: 10px;
+}
+
+.modal__image__grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 25px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /*=============== ABOUT ===============*/
 .about__data {
   text-align: center;
@@ -480,6 +557,9 @@ input {
 }
 
 .discover__img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
   transition: var(--img-transition);
 }
 
@@ -574,7 +654,9 @@ input {
 
 /*=============== PLACES ===============*/
 .place__card, .place__img {
+  width: 450px;
   height: 230px;
+  object-fit: cover;
 }
 
 .place__container {
