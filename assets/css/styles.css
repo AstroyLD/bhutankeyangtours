@@ -655,8 +655,8 @@ input {
 
 /*=============== PLACES ===============*/
 .place__card, .place__img {
-  width: 450px;
-  height: 230px;
+  width: 380px;
+  height: 190px;
   object-fit: cover;
 }
 
