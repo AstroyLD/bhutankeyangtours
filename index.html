@@ -15,7 +15,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Bhutan Keyang Tours</title>
+        <title>Responsive Website Travel</title>
     </head>
     <body>
         <header class="header" id="header">
@@ -31,10 +31,13 @@
                             <a href="#about" class="nav__link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#discover" class="nav__link">Discover</a>
+                            <a href="#discover" class="nav__link">Food</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#place" class="nav__link">Destinations</a>
+                            <a href="#experience" class="nav__link">Festivals</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Destination</a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">Contact</a>
@@ -105,7 +108,7 @@
             
             <!--==================== DISCOVER ====================-->
             <section class="discover section" id="discover">
-                <h2 class="section__title">Discover the most <br> attractive places</h2>
+                <h2 class="section__title">Savor the Bhutan's <br> Most Delectable Dishes</h2>
                 
                 <div class="discover__container container swiper-container">
                     <div class="swiper-wrapper">
@@ -135,36 +138,190 @@
             </section>
 
             <!--==================== EXPERIENCE ====================-->
-            <section class="experience section">
-                <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+            <section class="experience section" id="experience">
+                <h2 class="section__title">Discover Bhutan <br> Your Guide to Unforgettable Experience</h2>
 
-                <div class="experience__container container grid">
-                    <div class="experience__content grid">
-                        <div class="experience__data">
-                            <h2 class="experience__number">7</h2>
-                            <span class="experience__description">Year <br> Experience</span>
-                        </div>
-
-                        <div class="experience__data">
-                            <h2 class="experience__number">10</h2>
-                            <span class="experience__description">Complete <br> treks</span>
-                        </div>
-
-                        <div class="experience__data">
-                            <h2 class="experience__number">100+</h2>
-                            <span class="experience__description">Tourist <br> Destination</span>
-                        </div>
-                    </div>
-
-                    <div class="experience__img grid">
-                        <div class="experience__overlay">
-                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
-                        </div>
+                
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
                         
-                        <div class="experience__overlay">
-                            <img src="assets/img/experience2.png" alt="" class="experience__img-two">
+                        <img src="assets/img/culture.jpg" alt="" class="place__img">
+                        
+                        <div class="discover__data">
+                            <h3 class="place__title">Cultures & Traditions</h3>
+                            <button data-modal-target="#culture" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="culture">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/culture_image1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/culture_image2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Immerse yourself in the rich and vibrant culture of Bhutan. Discover a land deeply rooted in tradition, where ancient customs and beliefs 
+                                    are still alive today. Witness the daily rituals, explore the remarkable monasteries, and engage with the warm and welcoming locals. 
+                                    Experience a way of life that has remained virtually unchanged for centuries, and gain a profound understanding of Bhutanese culture and tradition                                
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </div>
                     </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/festival.jpg" alt="" class="place__img">
+                        
+                        <div class="discover__data">
+                            <h3 class="place__title">Festivals</h3>
+                             <button data-modal-target="#festival" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="festival">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/festival_image1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/festival_image2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Step into a world of vibrant colors, rhythmic dances, and mesmerizing rituals. Experience the magic of Bhutan's festivals, 
+                                    where locals and visitors come together in joyful celebration. From the iconic Paro Tshechu to the colorful Punakha Dromchoe, 
+                                    these festivals offer an unforgettable glimpse into Bhutanese traditions and spirituality. Immerse yourself in the festive spirit, 
+                                    witness ancient mask dances, and revel in the cultural extravaganza that brings the country to life                                
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/dress.jpg" alt="" class="place__img">
+                        
+                        <div class="discover__data">
+                            <h3 class="place__title">National Dress</h3>
+                            <button data-modal-target="#dress" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="dress">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/dress_image1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/dress_image2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Embark on a journey to discover Bhutan's national dress, the gho for men and the kira for women. These traditional garments are more than just 
+                                    clothing; they represent a deep sense of pride and identity. Learn about the intricate weaving techniques, the vibrant patterns, and the symbolic
+                                    significance of each element. Try on the gho or kira yourself, and experience the beauty and elegance of Bhutan's traditional attire.                                
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/biodiversity.jpg" alt="" class="place__img">
+                        
+                        <div class="discover__data">
+                            <h3 class="place__title">Biodiversity</h3>
+                            <button data-modal-target="#biodiversity" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="biodiversity">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/biodiversity_image1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/biodiversity_image2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Uncover the astonishing biodiversity of Bhutan, a hidden gem nestled in the Eastern Himalayas. With its diverse ecosystems ranging from subtropical
+                                    jungles to high alpine meadows, Bhutan is a sanctuary for a wide array of plants and animals. Explore the lush forests, spot rare and endangered 
+                                    species, and marvel at the breathtaking vistas. Discover a country that prides itself on its commitment to conservation and preservation of its
+                                    awe-inspiring biodiversity.
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/sport.jpg" alt="" class="place__img">
+                        
+                        <div class="discover__data">
+                            <h3 class="place__title">Sports</h3>
+                            <button data-modal-target="#sports" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="sports">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/sport_image1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/sport_image2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Experience the thrill of traditional Bhutanese sports and games. From archery, the national sport, to khuru, a dart-throwing game, get ready to 
+                                    challenge yourself in ancient disciplines played for centuries. Engage with friendly locals during friendly competitions, and learn about the 
+                                    cultural significance of these traditional sports. Immerse yourself in the exhilarating atmosphere, and create memories that will last a lifetime.
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </div>
+
+                      <!--==================== PLACES CARD 6 ====================-->
+                      <div class="place__card">
+                        <img src="assets/img/tours.jpg" alt="" class="place__img">
+                        
+                        <div class="discover__data">
+                            <h3 class="place__title">Treks & Tours</h3>
+                            <button data-modal-target="#tours" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="tours">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/tours_image1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/tours_image2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Embark on an unforgettable adventure through Bhutan's rugged landscapes and pristine wilderness. Explore the majestic Himalayan peaks, 
+                                    traverse scenic mountain passes, and delve into remote valleys untouched by modernity. Whether you prefer gentle walks or challenging treks, 
+                                    there is a trail for everyone. Experience the unique blend of natural beauty, cultural heritage, and spiritual sanctity that make Bhutan a dream
+                                    destination for trekkers and nature enthusiasts. Let our expert guides lead you through this enchanting land, ensuring an immersive and 
+                                    unforgettable experience.                                
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -175,87 +332,211 @@
                 <div class="place__container container grid">
                     <!--==================== PLACES CARD 1 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        <img src="assets/img/haa.jpg" alt="" class="place__img">
                         
                         <div class="discover__data">
-                            <h3 class="place__title">Dochula</h3>
-                            <span class="place__subtitle">Thimphu</span>
+                            <h3 class="place__title">Haa</h3>
+                            <button data-modal-target="#place_haa" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="place_haa">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/haa_place1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/haa_place2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                    Welcome to Haa, a picturesque dzongkhag nestled in the western part of Bhutan. 
+                                    Known for its serene beauty and cultural heritage, Haa offers a perfect escape for nature enthusiasts and those seeking tranquility. 
+                                    With its stunning landscapes, pristine lakes, and lush green valleys, Haa is a paradise for hikers and adventurers. 
+                                    Immerse yourself in the local traditions and explore historical sites like Lhakhang Karpo and Lhakhang Nagpo. 
+                                    Discover the unique cuisine, warm hospitality, and rich culture that make Haa a must-visit destination in Bhutan.</p>
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </div>
                     </div>
 
                     <!--==================== PLACES CARD 2 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place6.jpg" alt="" class="place__img">
+                        <img src="assets/img/paro.jpg" alt="" class="place__img">
                         
                         <div class="discover__data">
-                            <h3 class="place__title">Phajoding</h3>
-                            <span class="place__subtitle">Thimphu</span>
+                            <h3 class="place__title">Paro</h3>
+                            <button data-modal-target="#place_paro" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="place_paro">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/paro_place3.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/paro_place4.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                Step into Paro, a charming dzongkhag located in the heart of Bhutan. Renowned for its iconic Tiger's Nest Monastery, 
+                                Paro is a treasure trove of natural beauty and cultural heritage. The stunning Paro Valley, surrounded by majestic mountains,
+                                 offers breathtaking views that will leave you captivated. Explore ancient temples, visit traditional farmhouses, 
+                                 and delve into the fascinating history of Bhutan as you wander through Paro's quaint streets. 
+                                 Don't forget to indulge in the local cuisine and experience the warm hospitality that Paro has to offer.                                
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </div>
                     </div>
 
                     <!--==================== PLACES CARD 3 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        <img src="assets/img/thimphu.jpg" alt="" class="place__img">
                         
                         <div class="discover__data">
-                            <h3 class="place__title">Punakha</h3>
-                            <span class="place__subtitle">Punakha</span>
+                            <h3 class="place__title">Thimphu</h3>
+                            <button data-modal-target="#place_thimphu" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="place_thimphu">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/thimphu_place1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/thimphu_place2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Welcome to Thimphu, the capital city of Bhutan and a vibrant dzongkhag bursting with charm and modernity. 
+                                    Nestled in the scenic Wang Chu Valley, Thimphu seamlessly blends Bhutan's rich cultural heritage with a progressive urban environment. 
+                                    Discover the magnificent Tashichho Dzong, embark on a pilgrimage to the National Memorial Chorten, or immerse yourself in the bustling 
+                                    local markets. From traditional festivals to contemporary art galleries, Thimphu offers a unique blend of traditional and contemporary 
+                                    experiences that will leave you enchanted.
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </div>
                     </div>
 
                     <!--==================== PLACES CARD 4 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place4.jpg" alt="" class="place__img">
+                        <img src="assets/img/punakha.jpg" alt="" class="place__img">
                         
                         <div class="discover__data">
-                            <h3 class="place__title">Drukgyel Dzong</h3>
-                            <span class="place__subtitle">Paro</span>
+                            <h3 class="place__title">Punakha</h3>
+                            <button data-modal-target="#place_punakha" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="place_punakha">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/punakha_place1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/punakha_place2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Embark on a journey to Punakha, a stunning dzongkhag located amidst the verdant valleys and terraced fields of Bhutan. 
+                                    Known for its historical significance as the former capital of Bhutan, Punakha holds a special place in the hearts of the Bhutanese people. 
+                                    Explore the grand Punakha Dzong, a majestic fortress where traditional monastic and administrative institutions harmoniously coexist. 
+                                    Surrounded by the gushing waters of Pho Chhu and Mo Chhu rivers, Punakha is also a gateway to picturesque hikes and breathtaking landscapes,
+                                    making it a haven for nature lovers and adventure seekers.
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </div>
                     </div>
 
                     <!--==================== PLACES CARD 5 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/place5.jpg" alt="" class="place__img">
+                        <img src="assets/img/wangdue.jpeg" alt="" class="place__img">
                         
                         <div class="discover__data">
-                            <h3 class="place__title">Jangkothang</h3>
-                            <span class="place__subtitle">Paro</span>
+                            <h3 class="place__title">Wangdue Phodrang</h3>
+                            <button data-modal-target="#place_wangdue" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="place_wangdue">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/wangdue_place1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/wangdue_place2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Discover the beauty of Wangdue Phodrang, a captivating dzongkhag nestled at the foothills of the Black Mountains. 
+                                    As you explore its quaint towns and villages, you'll be captivated by the panoramic views of lush valleys, cascading waterfalls, 
+                                    and terraced rice fields. Wangdue Phodrang is famous for its serene Gangtey Valley, where you can witness the mesmerizing black-necked 
+                                    cranes during their migration. Dive deeper into Bhutanese culture with visits to age-old monasteries and experience the warm hospitality
+                                     of the people. Wangdue Phodrang is a hidden gem that offers a perfect blend of untouched natural beauty and cultural heritage.
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </div>
                     </div>
 
                       <!--==================== PLACES CARD 6 ====================-->
                       <div class="place__card">
-                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        <img src="assets/img/bumthang.jpg" alt="" class="place__img">
                         
                         <div class="discover__data">
-                            <h3 class="place__title">Taktshang</h3>
-                            <span class="place__subtitle">Paro</span>
+                            <h3 class="place__title">Bumthang</h3>
+                            <button data-modal-target="#place_bumthang" class="button button--flex modal--button--link home__info-button">Explore <i class="ri-arrow-right-line"></i></button>
+                            <div class="modal" id="place_bumthang">
+                                <div class="modal-header">
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal__image__grid">
+                                    <div class="place__card">
+                                        <img src="assets/img/bumthang_place1.jpg" alt="" class="place__img">
+                                    </div>
+                                    <div class="place__card">
+                                        <img src="assets/img/bumthang_place2.jpg" alt="" class="place__img">
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    Step into the enchanting Bumthang, a spiritual dzongkhag that is often referred to as the "Sacred Valley of Bhutan." 
+                                    Known for its mystical aura and religious significance, Bumthang offers a unique spiritual experience. Explore the ancient temples and monasteries, 
+                                    such as Jambay Lhakhang and Kurjey Lhakhang, where legends and myths come alive. As you delve into the rich cultural heritage and traditions of 
+                                    Bumthang, allow yourself to be transported to a world of ancient legends and spiritual enlightenment. Surrounded by serene landscapes and pristine 
+                                    nature, Bumthang is a soul-stirring destination that will leave a lasting impression.
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
                         </div>
                     </div>
 
                 </div>
             </section>
 
-            <!--==================== SUBSCRIBE ====================-->
+            <!--==================== CONTACT ====================-->
             <section class="subscribe section" id="contact">
                 <div class="subscribe__bg">
                     <div class="subscribe__container container">
                         <h2 class="section__title subscribe__title">Contact Us</h2>
                         <p class="subscribe__description">We'd love to hear from you! Whether you have questions about our travel packages <br>
-                             or need assistance planning your dream vacation, our dedicated team is here to help. <br> Reach out to us using any of the following methods:
+                             or need assistance planning your dream vacation, our dedicated team is here to help. <br> Reach out to us on +975 17600023 or using any of the following methods:
                         </p>
                         <div class="subscribe__description">
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <a href="https://www.facebook.com/Bhutankeyang" target="_blank" class="footer__social">
                                 <i class="ri-facebook-box-fill"></i>
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
-                                <i class="ri-youtube-fill"></i>
-                            </a>
-                            <a href="https://www.gmail.com/" target="_blank" class="footer__social">
+                            <a href="mailto:keyangtours@gmail.com" target="_blank" class="footer__social">
                                 <i class="ri-mail-fill"></i>
+                            </a>
+                            <a href="https://www.google.com/maps/place/Changlam+Plaza/@27.4728209,89.6390758,18.92z/data=!4m14!1m7!3m6!1s0x39e1941407b8fedd:0x1e4b0385a8398a48!2sChanglam+Plaza!8m2!3d27.4728107!4d89.6396883!16s%2Fg%2F1hdz0vbz3!3m5!1s0x39e1941407b8fedd:0x1e4b0385a8398a48!8m2!3d27.4728107!4d89.6396883!16s%2Fg%2F1hdz0vbz3?entry=ttu" target="_blank" class="footer__social">
+                                <i class="ri-map-pin-2-line"></i>
                             </a>
                         </div>
                     </div>
@@ -268,7 +549,7 @@
         <footer class="footer section">
             <div class="footer__container container grid">
                 <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                    <p class="footer__copy">&#169; 2023. All rigths reserved.</p>
                     <div class="footer__terms">
                         <a href="#" class="footer__terms-link">Terms & Agreements</a>
                         <a href="#" class="footer__terms-link">Privacy Policy</a>
@@ -281,7 +562,8 @@
         <a href="#" class="scrollup" id="scroll-up">
             <i class="ri-arrow-up-line scrollup__icon"></i>
         </a>
-
+        <!-- ============ MODAL ================ -->
+        <script defer src="assets/js/script.js"></script>
         <!--=============== SCROLL REVEAL===============-->
         <script src="assets/js/scrollreveal.min.js"></script>
         
