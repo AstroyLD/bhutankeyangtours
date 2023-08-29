@@ -426,6 +426,7 @@ input {
   width: 1300px;
   height: 80vh;
   max-width: 80%;
+  font-size: 12px;
 }
 
 .modal.active {
@@ -454,7 +455,7 @@ input {
 }
 
 .modal-body {
-  padding: 50px 50px;
+  padding: 20px 30px;
 }
 
 .modal--button--link {
@@ -557,8 +558,8 @@ input {
 }
 
 .discover__img {
-  width: 350px;
-  height: 400px;
+  width: 200px;
+  height: 250px;
   object-fit: cover;
   transition: var(--img-transition);
 }
@@ -660,7 +661,7 @@ input {
 }
 
 .place__container {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(1, max-content);
   justify-content: center;
 }
 
@@ -896,6 +897,14 @@ a i{
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
+  .modal{
+    font-size: 12px;
+  }
+  .modal-body{
+    .modal-body {
+      padding: 20px 50px 20px 50px;
+    }
+  }
   .place__container {
     grid-template-columns: max-content;
     justify-content: center;
@@ -921,9 +930,20 @@ a i{
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+  .modal{
+    font-size: 14px;
+  }
+  .modal-body{
+      padding: 30px 50px 30px 50px;
+  }
   .nav__logo_img{
     width: 60px;
     height: auto;
+  }
+  .discover__img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
   }
   .video__container {
     display: grid;
@@ -931,7 +951,12 @@ a i{
     justify-content: center;
   }
   .place__container {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
+  }
+  .place__card, .place__img {
+    width: 280px;
+    height: 170px;
+    object-fit: cover;
   }
   .subscribe__form {
     width: 470px;
@@ -942,6 +967,12 @@ a i{
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+  }
+  .modal{
+    font-size: 15px;
+  }
+  .modal-body{
+      padding: 30px 50px 30px 50px;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -1040,6 +1071,15 @@ a i{
   .experience__overlay:nth-child(2) {
     width: 160px;
   }
+  .place__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+  }
+  .place__card, .place__img {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+  }
   .subscribe__bg {
     background: none;
     padding: 0;
@@ -1062,6 +1102,12 @@ a i{
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+  .modal{
+    font-size: 16px;
+  }
+  .modal-body{
+    padding: 30px 80px;
   }
   .home__container {
     grid-template-rows: 2fr .5fr;
@@ -1093,6 +1139,11 @@ a i{
     left: 1.5rem;
     bottom: 2rem;
   }
+  .discover__img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+  }
   .discover__title {
     font-size: var(--h2-font-size);
   }
@@ -1116,6 +1167,10 @@ a i{
   }
   .place__container {
     gap: 3rem 2rem;
+  }
+  .place__container {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
   }
   .place__card, .place__img {
     height: 263px;
